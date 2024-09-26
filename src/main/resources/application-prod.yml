@@ -5,12 +5,13 @@ spring:
   application:
     name: MakeAnOrder
   datasource:
-    url: jdbc:mysql://${MYSQLHOST:localhost}:${MYSQLPORT:3309}/${MYSQLDATABASE:ecommerce}
-    username: ${MYSQLUSER:user1}
-    password: ${MYSQLPASSWORD:password1}
+    url: jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT:3309}/${MYSQL_DATABASE}
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: false
+
 
