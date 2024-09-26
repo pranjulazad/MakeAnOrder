@@ -5,9 +5,9 @@ spring:
   application:
     name: MakeAnOrder
   datasource:
-    url: jdbc:mysql://${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}
-    username: ${MYSQLUSER}
-    password: ${MYSQLPASSWORD}
+    url: jdbc:mysql://${MYSQLHOST:localhost}:${MYSQLPORT:3309}/${MYSQLDATABASE:ecommerce}
+    username: ${MYSQLUSER:user1}
+    password: ${MYSQLPASSWORD:password1}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
