@@ -1,0 +1,19 @@
+app:
+  version: 1.0
+
+server:
+  port: ${APP_PORT}
+
+spring:
+  application:
+    name: MakeAnOrder
+  datasource:
+    url: ${MYSQL_URL}
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASS}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
